@@ -1,0 +1,8 @@
+<div>
+  <img [ngStyle]="imgStyle" [src]="imgValue" alt="img" *ngIf="imgValue ; else elseblock">
+
+  <ng-template #elseblock>
+    <img [src]="imgDefaultValue" alt="img">
+  </ng-template>
+
+</div>
