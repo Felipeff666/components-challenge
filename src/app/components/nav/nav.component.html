@@ -1,1 +1,36 @@
-<p>nav works!</p>
+<div class="nav-web">
+  <div><a href=""><img width="100" src="../../../assets/images/spaceman-nav.png" alt=""></a></div>
+  <div class="nav-web-options">
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>My work</li>
+      </ul>
+    </nav>
+  </div>
+  <div>
+    <button>Contacto</button>
+  </div>
+</div>
+
+
+<div class="nav-mobile">
+  <div><a href=""><img width="50" src="../../../assets/images/spaceman-nav.png" alt=""></a></div>
+  <div>
+    <button (click)="onActiveMenu()" class="side-button"><img width="30" src="../../../assets/svg/icon_menu.svg"
+        alt=""></button>
+  </div>
+  <div class="side-menu" [class.active]="activeMenu">
+    <div>
+      <nav>
+        <ul>
+          <li><a href=""><img width="50" src="../../../assets/images/spaceman-nav.png" alt=""></a></li>
+          <li>Home</li>
+          <li>My work</li>
+          <li><button>Contacto</button></li>
+          <li><button (click)="onActiveMenu()">Cerrar Menu</button></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
